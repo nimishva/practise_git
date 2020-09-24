@@ -1,0 +1,16 @@
+.leftBar{
+    background-color: #f3efef;
+}
+.content_sec{
+    color: #f3efef;   
+}
+.onlineListli{
+    padding: .5em;
+    background-color: #05588f;   
+    color: #f3efef;
+    height:40px;
+}
+.onlineListli a{
+    text-decoration: none;
+    color: #f3efef;
+}

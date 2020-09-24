@@ -1,0 +1,72 @@
+<div class="mid-class">
+	<div class="art-right-w3ls">
+	   <h2>Login</h2>
+	   <form action="#" method="post" #login="ngForm" (ngSubmit)="userSignIn(login)" >
+		  <div class="main">
+			 <div class="form-left-to-w3l">
+				<input type="text" name="emailLogin" #emailLogin="ngModel" ngModel placeholder="Email" required="">
+			 </div>
+			 <div class="form-left-to-w3l ">
+				<input type="password" name="passLogin" #passLogin="ngModel" ngModel placeholder="Password" required="">
+				<div class="clear"></div>
+			 </div>
+		  </div>
+		  <div class="btnn">
+			 <button type="submit">Sign In</button>
+		  </div>
+	   </form>
+	   <div class="w3layouts_more-buttn">
+		  <h3>Don't Have an account..?
+			 <a href="#content1">Sign Up Here
+			 </a>
+		  </h3>
+	   </div>
+	   <!-- popup-->
+	   <div id="content1" class="popup-effect">
+		  <div class="popup">
+			 <!--login form-->
+			 <div class="letter-w3ls">
+				<form action="#" method="POST" enctype="multipart/form-data" #f="ngForm" (ngSubmit)="submitSignup(f)" >
+				   <div class="form-left-to-w3l">
+					  <input type="text" name="username" placeholder="name" #username="ngModel" ngModel required="">
+				   </div>
+				   <div class="form-left-to-w3l">
+					  <input type="email" name="email" placeholder="Email" #email="ngModel" ngModel required="">
+				   </div>
+				
+				   <div class="form-left-to-w3l">
+					  <input type="password" name="password" placeholder="Password" #password="ngModel" ngModel required="">
+				   </div>
+				   <div class="form-left-to-w3l margin-zero">
+					  <input type="password" name="password" placeholder="Confirm Password" ngModel required="">
+				   </div>
+				   <div class="form-left-to-w3l pt-4">
+					   <select name="gender" id="" placeholder="Gender" #gender="ngModel" ngModel required="">
+						   <option value="male">Male</option>
+						   <option value="female">Female</option>
+						   <option value="other">Other</option>
+					   </select>
+				  </div>
+				  <div class="form-group">
+					 
+					<input type="file" name="profile"  placeholder="Profile image" #profile="ngModel" ngModel accept=".jpeg,.jpeg,.png" class="form-control p-1">
+				 </div>
+				   <div class="btnn">
+					  <button type="submit">Sign Up</button>
+					  <br>
+				   </div>
+				</form>
+				<div class="clear"></div>
+			 </div>
+			 <!--//login form-->
+			 <a class="close" href="#">&times;</a>
+		  </div>
+	   </div>
+	   <!-- //popup -->
+	</div>
+	<div class="art-left-w3ls">
+	   <h1 class="header-w3ls">
+		 
+	   </h1>
+	</div>
+ </div>
